@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b5f48" />
+  <meta name="description" content="Tapan CSC information website for local digital services and assistance." />
+  <title>Tapan CSC | Digital Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span>Serving Jharigam with convenient digital assistance</span><span class="topbar-right">Independent service website · Not an official government portal</span></div></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Tapan CSC home">
+        <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 36 12v16L20 37 4 28V12Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 14h16M12 20h16M12 26h10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+        <span><strong>Tapan <em>CSC</em></strong><small>Digital services for everyone</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="#services">Services</a><a href="#how-it-works">How it works</a></nav>
+      <div class="header-actions"><button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home"><div class="container hero-grid">
+      <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> YOUR LOCAL DIGITAL STORE</span>
+        <h1>Everyday services.<br><span>Made simpler.</span></h1>
+        <p>Find information about common digital services and local assistance, all in one convenient place.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#services">Explore services <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">How it works <span aria-hidden="true">→</span></a></div>
+        <div class="hero-trust"><div class="avatar-stack"><span>D</span><span>S</span><span>+</span></div><div><strong>Helpful local assistance</strong><small>Simple · Local · Convenient</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of online store services">
+        <div class="visual-glow"></div><div class="float-card float-card-top"><span class="mini-icon green">✓</span><span><strong>Easy requests</strong><small>All in one place</small></span></div>
+        <div class="dashboard-card"><div class="dash-top"><div><small>WELCOME TO</small><h3>Tapan CSC</h3></div><div class="dash-avatar">TC</div></div><div class="dash-line"></div><div class="dash-title">What do you need today?</div><div class="dash-services"><div><span class="service-emoji">🧾</span><small>Bill pay</small></div><div><span class="service-emoji">🪪</span><small>Documents</small></div><div><span class="service-emoji">🖨️</span><small>Printing</small></div><div><span class="service-emoji">📝</span><small>Online forms</small></div></div><div class="dash-order"><span class="order-check">✓</span><span><strong>Local service guidance</strong><small>Know what to prepare before visiting</small></span><span class="order-arrow">↗</span></div></div>
+        <div class="float-card float-card-bottom"><span class="mini-icon orange">✓</span><span><strong>Local support</strong><small>Confirm details with your operator</small></span></div>
+      </div>
+    </div></section>
+
+    <section class="benefits"><div class="container benefits-grid"><div class="benefit"><span class="benefit-icon">⌕</span><div><strong>Easy to explore</strong><small>Find services quickly</small></div></div><div class="benefit"><span class="benefit-icon">▣</span><div><strong>Service information</strong><small>Understand the available assistance</small></div></div><div class="benefit"><span class="benefit-icon">♡</span><div><strong>Made for convenience</strong><small>Mobile-friendly experience</small></div></div></div></section>
+
+    <section class="section" id="services"><div class="container"><div class="section-heading"><div><span class="eyebrow">DIGITAL ASSISTANCE</span><h2>Popular services</h2><p>Explore our popular services and try the interactive demos. Confirm availability, requirements and any fees before proceeding.</p></div></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon icon-mint">▤</div><h3>Printing & photocopy</h3><p>Printouts, copies and document support.</p><button type="button" class="service-link demo-trigger" data-demo="printing" aria-controls="serviceDemo">Try demo <span>↗</span></button></article>
+        <article class="service-card"><div class="service-icon icon-lavender">▣</div><h3>Online form assistance</h3><p>Help preparing and submitting online forms.</p><button type="button" class="service-link demo-trigger" data-demo="forms" aria-controls="serviceDemo">Try demo <span>↗</span></button></article>
+        <article class="service-card"><div class="service-icon icon-yellow">▧</div><h3>Bill payment support</h3><p>Request assistance with eligible bill payments.</p><button type="button" class="service-link demo-trigger" data-demo="bills" aria-controls="serviceDemo">Try demo <span>↗</span></button></article>
+        <article class="service-card"><div class="service-icon icon-pink">▥</div><h3>Document scanning</h3><p>Scan and prepare digital copies of documents.</p><button type="button" class="service-link demo-trigger" data-demo="scanning" aria-controls="serviceDemo">Try demo <span>↗</span></button></article>
+      </div>
+      <section class="service-demo hidden" id="serviceDemo" aria-labelledby="serviceDemoTitle" aria-live="polite">
+        <div class="service-demo-heading">
+          <div><span class="eyebrow">INTERACTIVE PREVIEW</span><h3 id="serviceDemoTitle">Try a service demo</h3><p>Explore a sample workflow. Nothing is submitted or paid for.</p></div>
+          <button type="button" class="demo-close" id="closeServiceDemo" aria-label="Close service demo">×</button>
+        </div>
+        <div id="demoContent"></div>
+        <p class="demo-disclaimer">Demo only. Sample estimates and checklists are illustrative, not official fees or requirements. No information is uploaded or sent to a service provider.</p>
+      </section>
+    </div></section>
+
+    <section class="how-section" id="how-it-works"><div class="container how-grid"><div><span class="eyebrow">A SIMPLE PROCESS</span><h2>Get support in<br><span>three easy steps.</span></h2><p class="how-intro">Use this website to explore common services before contacting or visiting your local CSC service operator.</p><div class="note-box"><strong>Before you visit</strong><p>Confirm service availability, required documents, official fees and any applicable eligibility requirements with your local operator.</p></div></div><div class="steps"><div class="step"><span class="step-number">01</span><div><h3>Choose a service</h3><p>Review the service categories above and identify the assistance you need.</p></div><span class="step-icon">⌕</span></div><div class="step"><span class="step-number">02</span><div><h3>Prepare your documents</h3><p>Ask your local operator which documents or details are required for your service.</p></div><span class="step-icon">▤</span></div><div class="step"><span class="step-number">03</span><div><h3>Confirm details with the operator</h3><p>Check availability, fees and next steps before proceeding with a service.</p></div><span class="step-icon">✓</span></div></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-main"><a class="brand brand-footer" href="#home"><span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 36 12v16L20 37 4 28V12Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 14h16M12 20h16M12 26h10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span><span><strong>Tapan <em>CSC</em></strong><small>Digital services for everyone</small></span></a><p>A simple information website for local digital services and assistance.</p><div class="footer-address"><strong>Visit us</strong><address>Jharigam, Jharigam–Dabugam Main Road<br>PIN Code: 764076</address><a href="https://www.google.com/maps/search/?api=1&amp;query=Jharigam%2C%20Jharigam-Dabugam%20Main%20Road%2C%20764076" target="_blank" rel="noopener noreferrer">Get directions ↗</a></div><div class="footer-links"><a href="#services">Services</a><a href="#how-it-works">How it works</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Tapan CSC Demo</span><span>Independent demo website · Not an official government portal</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
